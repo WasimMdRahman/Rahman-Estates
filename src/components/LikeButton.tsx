@@ -1,23 +1,52 @@
 'use client';
 
 import { Heart } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { useUser, useFirestore, useDoc, setDocumentNonBlocking, deleteDocumentNonBlocking, useMemoFirebase } from '@/firebase';
+import { doc } from 'firebase/firestore';
+import { useToast } from '@/hooks/use-toast';
 
-const LikeButton = () => {
+const LikeButton = ({ propertyId, propertyData }: { propertyId: string, propertyData: any }) => {
+  const { user } = useUser();
+  const firestore = useFirestore();
+  const { toast } = useToast();
+
+  const likeRef = useMemoFirebase(() => {
+    if (!user) return null;
+    return doc(firestore, `users/${user.uid}/likedProperties`, propertyId);
+  }, [firestore, user, propertyId]);
+
+  const { data: likeDoc } = useDoc(likeRef);
   const [liked, setLiked] = useState(false);
+
+  useEffect(() => {
+    setLiked(!!likeDoc);
+  }, [likeDoc]);
+  
   const [particles, setParticles] = useState<number[]>([]);
 
   const handleClick = () => {
-    const newLikedState = !liked;
-    setLiked(newLikedState);
-    if (newLikedState) {
-      setParticles(Array.from({ length: 20 }, (_, i) => i));
+    if (!user) {
+      toast({
+        title: "Sign in to like properties",
+        description: "You need to be signed in to save your favorite properties.",
+      });
+      return;
+    }
+    
+    if (likeRef) {
+      if (liked) {
+        deleteDocumentNonBlocking(likeRef);
+      } else {
+        setDocumentNonBlocking(likeRef, propertyData, { merge: false });
+        setParticles(Array.from({ length: 20 }, (_, i) => i));
+      }
     }
   };
-
-  const onAnimationComplete = () => {
+  
+   const onAnimationComplete = () => {
     if (particles.length > 0) {
       setParticles([]);
     }

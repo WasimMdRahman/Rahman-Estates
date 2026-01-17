@@ -55,7 +55,7 @@ const PropertyCard = ({ property }: { property: Property }) => {
     >
       <div style={{ transform: 'translateZ(20px)' }} className="p-4">
         <div className="relative h-[400px] rounded-lg overflow-hidden group">
-          <motion.div 
+          <motion.div
             className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{
               background: `radial-gradient(circle at ${glowX.get()} ${glowY.get()}, hsla(273, 62%, 46%, 0.3), transparent 50%)`,
@@ -71,7 +71,7 @@ const PropertyCard = ({ property }: { property: Property }) => {
             />
           )}
           <div className="absolute top-3 right-3 z-20">
-            <LikeButton />
+            <LikeButton propertyId={property.id} propertyData={property} />
           </div>
         </div>
 
