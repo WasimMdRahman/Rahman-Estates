@@ -49,6 +49,29 @@ export default function Home() {
 
       <FilterBar />
 
+      <section className="py-20 text-center">
+        <div className="max-w-3xl mx-auto">
+            <Reveal>
+                <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">A Heritage of Trust</h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                    For over half a century, the name Rahman has been synonymous with more than just property; it represents a heritage of trust, a commitment to unparalleled excellence, and the art of curating the world’s most exceptional living experiences. We are not merely brokers of homes; we are custodians of legacy.
+                </p>
+            </Reveal>
+            <Reveal delay={0.2}>
+                <Magnetic>
+                    <Link href="/about" passHref>
+                        <Button variant="outline" className="rounded-full font-bold text-lg px-8 py-6 group">
+                            Discover Our Story
+                            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                        </Button>
+                    </Link>
+                </Magnetic>
+            </Reveal>
+        </div>
+      </section>
+
       <section className="py-20" id="listings">
         <div className="text-center mb-12">
           <Reveal>
