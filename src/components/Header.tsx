@@ -22,13 +22,13 @@ const Header = () => {
           <nav>
             <ul className="flex items-center space-x-8">
               <li>
-                <Link href="#listings" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Listings</Link>
+                <Link href="/#listings" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Listings</Link>
               </li>
               <li>
-                <Link href="#testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Testimonials</Link>
+                <Link href="/#testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Testimonials</Link>
               </li>
               <li>
-                <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</Link>
+                <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</Link>
               </li>
             </ul>
           </nav>
