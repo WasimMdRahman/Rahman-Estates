@@ -7,8 +7,19 @@ import { Slider } from "./ui/slider";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import Magnetic from "./animation/Magnetic";
+import { useState } from "react";
 
 const FilterBar = () => {
+  const [priceRange, setPriceRange] = useState([2500000]);
+
+  const formatPrice = (value: number) => {
+    if (value >= 10000000) return '$10M+';
+    if (value >= 1000000) {
+      return `$${parseFloat((value / 1000000).toFixed(1))}M`;
+    }
+    return `$${(value / 1000).toFixed(0)}k`;
+  };
+
   return (
     <motion.div
       initial={{ y: 50, opacity: 0 }}
@@ -63,8 +74,15 @@ const FilterBar = () => {
           </div>
         </div>
         <div className="mt-4">
-          <label className="block text-sm text-muted-foreground mb-2">Price Range</label>
-          <Slider defaultValue={[2500000]} max={10000000} step={100000} />
+          <div className="flex justify-between items-center mb-2">
+            <label className="block text-sm text-muted-foreground">Price Range</label>
+            <span className="font-semibold text-foreground">{formatPrice(priceRange[0])}</span>
+          </div>
+          <Slider 
+            value={priceRange} 
+            onValueChange={setPriceRange} 
+            max={10000000} 
+            step={100000} />
           <div className="flex justify-between text-xs text-muted-foreground mt-1">
             <span>$0</span>
             <span>$10M+</span>
