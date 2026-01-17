@@ -1,3 +1,82 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "Abstract architectural lines of a modern luxury building at night.",
+      "imageUrl": "https://images.unsplash.com/photo-1531591022136-eb8b0da1e6d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzY4NTg5NzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern architecture"
+    },
+    {
+      "id": "property-1-1",
+      "description": "Front view of a modern villa with a pool at dusk.",
+      "imageUrl": "https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjB2aWxsYXxlbnwwfHx8fDE3Njg1NTA1OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern villa"
+    },
+    {
+      "id": "property-1-2",
+      "description": "Living room of a modern villa with minimalist furniture.",
+      "imageUrl": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaW5pbWFsaXN0JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY4NTY5MzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist interior"
+    },
+    {
+      "id": "property-2-1",
+      "description": "A chic penthouse apartment with a city view.",
+      "imageUrl": "https://images.unsplash.com/photo-1674494777503-f5d3484104c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwZW50aG91c2UlMjBjaXR5fGVufDB8fHx8MTc2ODYxMjc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "penthouse city"
+    },
+    {
+      "id": "property-2-2",
+      "description": "Kitchen of a chic penthouse apartment.",
+      "imageUrl": "https://images.unsplash.com/photo-1639405069836-f82aa6dcb900?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwa2l0Y2hlbnxlbnwwfHx8fDE3Njg1MDM5OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern kitchen"
+    },
+    {
+      "id": "property-3-1",
+      "description": "A secluded countryside mansion surrounded by trees.",
+      "imageUrl": "https://images.unsplash.com/photo-1635453814033-1369b5f3d157?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb3VudHJ5c2lkZSUyMG1hbnNpb258ZW58MHx8fHwxNzY4NjExOTY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "countryside mansion"
+    },
+    {
+      "id": "property-4-1",
+      "description": "A beachfront property with ocean views.",
+      "imageUrl": "https://images.unsplash.com/photo-1689737969303-a32ea2f78f0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiZWFjaGZyb250JTIwcHJvcGVydHl8ZW58MHx8fHwxNzY4NTMxMjY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beachfront property"
+    },
+    {
+      "id": "property-5-1",
+      "description": "A modern loft in a converted industrial building.",
+      "imageUrl": "https://images.unsplash.com/photo-1652716279221-439c33c3b835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwbG9mdHxlbnwwfHx8fDE3Njg1MzEyNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial loft"
+    },
+    {
+      "id": "property-6-1",
+      "description": "A rustic mountain cabin with a stone fireplace.",
+      "imageUrl": "https://images.unsplash.com/photo-1525638248862-171adada295c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb3VudGFpbiUyMGNhYmlufGVufDB8fHx8MTc2ODU5NjQxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain cabin"
+    },
+    {
+      "id": "property-7-1",
+      "description": "Luxury apartment with a large balcony.",
+      "imageUrl": "https://images.unsplash.com/photo-1737898378296-94dc316cd443?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsdXh1cnklMjBhcGFydG1lbnR8ZW58MHx8fHwxNzY4NTc1MDM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury apartment"
+    },
+    {
+      "id": "property-8-1",
+      "description": "Suburban home with a beautiful garden.",
+      "imageUrl": "https://images.unsplash.com/photo-1628624747186-a941c476b7ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdWJ1cmJhbiUyMGhvbWV8ZW58MHx8fHwxNzY4NTM4OTMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "suburban home"
+    },
+    {
+      "id": "property-9-1",
+      "description": "Historic townhouse in a city center.",
+      "imageUrl": "https://images.unsplash.com/photo-1767379755371-63a251c16b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b3JpYyUyMHRvd25ob3VzZXxlbnwwfHx8fDE3Njg2MDMxMjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "historic townhouse"
+    },
+    {
+      "id": "property-10-1",
+      "description": "Eco-friendly home with solar panels.",
+      "imageUrl": "https://images.unsplash.com/photo-1650964336589-96b3f1719a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlY28tZnJpZW5kbHklMjBob21lfGVufDB8fHx8MTc2ODYxMjc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eco-friendly home"
+    }
+  ]
 }
