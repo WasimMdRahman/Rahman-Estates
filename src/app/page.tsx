@@ -53,7 +53,7 @@ export default function Home() {
       <FilterBar />
 
       <section className="py-20 text-center">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
             <Reveal>
                 <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">A Heritage of Trust</h2>
             </Reveal>
