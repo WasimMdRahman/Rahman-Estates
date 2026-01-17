@@ -4,16 +4,34 @@ import * as React from 'react';
 import Image from "next/image";
 import { testimonials } from "@/lib/data";
 import { placeholderImages } from "@/lib/placeholder-images.json";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import Reveal from "./animation/Reveal";
 import { Star } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
+import { cn } from '@/lib/utils';
 
 const Testimonials = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: true })
   );
+
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) return;
+
+    setCurrent(api.selectedScrollSnap());
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap());
+    };
+    api.on("select", onSelect);
+
+    return () => {
+      api.off("select", onSelect);
+    };
+  }, [api]);
 
   return (
     <section className="py-20" id="testimonials">
@@ -27,22 +45,29 @@ const Testimonials = () => {
       </div>
 
       <Carousel
+        setApi={setApi}
         plugins={[plugin.current]}
         opts={{
-          align: "start",
+          align: "center",
           loop: true,
         }}
         className="w-full max-w-5xl mx-auto"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-        <CarouselContent className="items-stretch">
-          {testimonials.map((testimonial) => {
+        <CarouselContent className="-ml-4 items-stretch">
+          {testimonials.map((testimonial, index) => {
             const image = placeholderImages.find(p => p.id === testimonial.imageId);
             return (
-              <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-4 h-full">
-                  <Card className="bg-card/80 border-white/10 backdrop-blur-sm h-full flex flex-col">
+              <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3 pl-4">
+                 <div
+                  className={cn(
+                    "p-1 transition-all duration-500 ease-out h-full",
+                    current === index ? "scale-100" : "scale-90 opacity-70"
+                  )}
+                  onClick={() => api?.scrollTo(index)}
+                >
+                  <Card className="bg-card/80 border-white/10 backdrop-blur-sm h-full flex flex-col cursor-pointer">
                     <CardContent className="p-6 flex flex-col items-center text-center flex-grow">
                       {image && (
                         <Image
