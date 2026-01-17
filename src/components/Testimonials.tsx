@@ -50,8 +50,8 @@ const Testimonials = () => {
                       <div className="flex gap-1 text-primary mb-4">
                         {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5" fill="currentColor" />)}
                       </div>
-                      <blockquote className="text-foreground/80 italic flex-grow">
-                        &ldquo;{testimonial.quote}&rdquo;
+                      <blockquote className="text-foreground/80 italic flex-grow flex items-center justify-center">
+                        <div>&ldquo;{testimonial.quote}&rdquo;</div>
                       </blockquote>
                     </CardContent>
                   </Card>
