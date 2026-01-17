@@ -22,6 +22,9 @@ const Header = () => {
           <nav>
             <ul className="flex items-center space-x-8">
               <li>
+                <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Home</Link>
+              </li>
+              <li>
                 <Link href="/#listings" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Listings</Link>
               </li>
               <li>
