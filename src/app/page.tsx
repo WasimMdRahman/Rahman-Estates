@@ -52,7 +52,7 @@ export default function Home() {
       <section className="py-20" id="listings">
         <div className="text-center mb-12">
           <Reveal>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold">Featured Properties</h2>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold">Our Top Properties</h2>
           </Reveal>
           <Reveal>
             <p className="text-muted-foreground mt-2">Handpicked selection of premier properties.</p>
