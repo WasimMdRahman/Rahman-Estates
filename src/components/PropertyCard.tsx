@@ -54,7 +54,7 @@ const PropertyCard = ({ property }: { property: Property }) => {
       className="relative w-full rounded-2xl bg-white/5 border border-white/10 shadow-2xl shadow-black/20"
     >
       <div style={{ transform: 'translateZ(20px)' }} className="p-4">
-        <div className="relative aspect-[4/3] rounded-lg overflow-hidden group">
+        <div className="relative h-[400px] rounded-lg overflow-hidden group">
           <motion.div 
             className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{

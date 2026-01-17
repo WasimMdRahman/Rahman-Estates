@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useSearchParams } from 'next/navigation';
@@ -52,9 +51,11 @@ export default function ListingsPage() {
         </Reveal>
         
         {filteredProperties.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center gap-12">
             {filteredProperties.map((property: Property) => (
-              <PropertyCard key={property.id} property={property} />
+              <div key={property.id} className="w-full max-w-[800px]">
+                <PropertyCard property={property} />
+              </div>
             ))}
           </div>
         ) : (
