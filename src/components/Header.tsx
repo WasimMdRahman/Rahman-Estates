@@ -17,14 +17,17 @@ import {
 } from "./ui/dropdown-menu";
 import { Skeleton } from "./ui/skeleton";
 import { User } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const AuthNav = () => {
   const { user, isUserLoading } = useUser();
   const auth = useAuth();
+  const router = useRouter();
 
   const handleSignOut = async () => {
     try {
       await signOut(auth);
+      router.push('/');
     } catch (error) {
       console.error("Error signing out: ", error);
     }
@@ -56,6 +59,10 @@ const AuthNav = () => {
               </p>
             </div>
           </DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem onClick={() => router.push('/account')}>
+            My Liked Properties
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem onClick={handleSignOut}>
             Sign out
