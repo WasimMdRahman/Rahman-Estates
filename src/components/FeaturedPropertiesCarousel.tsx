@@ -38,7 +38,7 @@ const FeaturedPropertiesCarousel = () => {
           const pricePerSqft = property.price / property.sqft;
 
           return (
-            <CarouselItem key={property.id} className="md:basis-1/2 lg:basis-[40%] xl:basis-1/3 pl-8">
+            <CarouselItem key={property.id} className="basis-[450px] pl-8">
               <div
                 className={cn(
                   "p-1 transition-all duration-500 ease-out",
@@ -46,8 +46,8 @@ const FeaturedPropertiesCarousel = () => {
                 )}
                 onClick={() => api?.scrollTo(index)}
               >
-                <div className="bg-card border border-white/10 rounded-2xl shadow-2xl shadow-black/20 overflow-hidden group cursor-pointer">
-                  <div className="relative aspect-video w-full overflow-hidden">
+                <div className="bg-card border border-white/10 rounded-2xl shadow-2xl shadow-black/20 overflow-hidden group cursor-pointer w-[400px] mx-auto">
+                  <div className="relative h-[250px] w-full overflow-hidden">
                     {image && (
                       <Image
                         src={image.imageUrl}
