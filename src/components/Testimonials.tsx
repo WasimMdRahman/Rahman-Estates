@@ -27,12 +27,12 @@ const Testimonials = () => {
         }}
         className="w-full max-w-5xl mx-auto"
       >
-        <CarouselContent>
+        <CarouselContent className="items-stretch">
           {testimonials.map((testimonial) => {
             const image = placeholderImages.find(p => p.id === testimonial.imageId);
             return (
               <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
-                <div className="p-4">
+                <div className="p-4 h-full">
                   <Card className="bg-card/80 border-white/10 backdrop-blur-sm h-full flex flex-col">
                     <CardContent className="p-6 flex flex-col items-center text-center flex-grow">
                       {image && (
