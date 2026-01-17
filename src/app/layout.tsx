@@ -6,8 +6,8 @@ import Footer from '@/components/Footer';
 import MeshGradient from '@/components/MeshGradient';
 
 export const metadata: Metadata = {
-  title: 'Aether Estates | Luxury Real Estate Marketplace',
-  description: 'Discover the finest luxury properties with Aether Estates. Experience a new standard in real estate.',
+  title: 'Rahman Estates | Luxury Real Estate Marketplace',
+  description: 'Discover the finest luxury properties with Rahman Estates. Experience a new standard in real estate.',
 };
 
 export default function RootLayout({

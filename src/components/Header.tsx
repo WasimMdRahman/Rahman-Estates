@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <Link href="/" className="font-headline text-2xl font-bold tracking-wider">
             <Reveal>
-              AETHER ESTATES
+              RAHMAN ESTATES
             </Reveal>
           </Link>
           <nav>
@@ -25,7 +25,7 @@ const Header = () => {
                 <Link href="#listings" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Listings</Link>
               </li>
               <li>
-                <Link href="#testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">For You</Link>
+                <Link href="#testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Testimonials</Link>
               </li>
               <li>
                 <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</Link>

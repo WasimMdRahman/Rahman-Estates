@@ -128,7 +128,7 @@ export const testimonials: Testimonial[] = [
     id: 't1',
     name: 'Sarah L.',
     location: 'New York, NY',
-    quote: 'Aether Estates made finding our dream penthouse a reality. The AI recommendations were scarily accurate, and the entire process was seamless. Truly a first-class experience.',
+    quote: 'Rahman Estates made finding our dream penthouse a reality. The AI recommendations were scarily accurate, and the entire process was seamless. Truly a first-class experience.',
     imageId: 'testimonial-1',
   },
   {
@@ -142,7 +142,7 @@ export const testimonials: Testimonial[] = [
     id: 't3',
     name: 'Kenji Tanaka',
     location: 'Miami, FL',
-    quote: "As an international buyer, I needed a team I could trust. Aether Estates exceeded all expectations. Professional, discreet, and incredibly knowledgeable about the luxury market.",
+    quote: "As an international buyer, I needed a team I could trust. Rahman Estates exceeded all expectations. Professional, discreet, and incredibly knowledgeable about the luxury market.",
     imageId: 'testimonial-3',
   },
   {

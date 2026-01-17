@@ -30,16 +30,16 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center">
           <Reveal>
             <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-b from-foreground to-foreground/70">
-              Find Your Aether
+              Your Legacy Awaits
             </h1>
           </Reveal>
           <Reveal>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
-              Experience the pinnacle of luxury living. Aether Estates curates the world&apos;s most extraordinary properties, just for you.
+              Experience the pinnacle of luxury living. Rahman Estates curates the world&apos;s most extraordinary properties, just for you.
             </p>
           </Reveal>
           <Magnetic>
-            <Button size="lg" className="rounded-full font-bold text-lg px-8 py-6 group">
+            <Button size="lg" className="rounded-full font-bold text-lg px-8 py-6 group" suppressHydrationWarning>
               Explore Listings
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
@@ -52,7 +52,7 @@ export default function Home() {
       <section className="py-20" id="listings">
         <div className="text-center mb-12">
           <Reveal>
-            <h2 className="font-headline text-4xl md:text-5xl font-bold">Our Top Properties</h2>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold" style={{ paddingTop: '0.2em', paddingBottom: '0.2em' }}>Our Top Properties</h2>
           </Reveal>
           <Reveal>
             <p className="text-muted-foreground mt-2">Handpicked selection of premier properties.</p>
