@@ -11,7 +11,6 @@ import FeaturedPropertiesCarousel from "@/components/FeaturedPropertiesCarousel"
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import Recommendations from "@/components/Recommendations";
 
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === 'hero-1');
@@ -25,7 +24,6 @@ export default function Home() {
               src={heroImage.imageUrl}
               alt={heroImage.description}
               fill
-              data-ai-hint={heroImage.imageHint}
               className="object-cover opacity-10"
             />
           )}
@@ -88,8 +86,6 @@ export default function Home() {
 
         <FeaturedPropertiesCarousel />
       </section>
-
-      <Recommendations />
 
       <Testimonials />
 

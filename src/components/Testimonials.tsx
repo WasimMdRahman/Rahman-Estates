@@ -41,7 +41,6 @@ const Testimonials = () => {
                           alt={testimonial.name}
                           width={80}
                           height={80}
-                          data-ai-hint={image.imageHint}
                           className="rounded-full mb-4 border-2 border-primary/50"
                         />
                       )}

@@ -36,7 +36,6 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
               src={mainImage.imageUrl}
               alt={property.title}
               fill
-              data-ai-hint={mainImage.imageHint}
               className="object-cover"
               priority
             />

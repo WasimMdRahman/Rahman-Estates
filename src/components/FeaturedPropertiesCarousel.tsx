@@ -53,7 +53,6 @@ const FeaturedPropertiesCarousel = () => {
                         src={image.imageUrl}
                         alt={property.title}
                         fill
-                        data-ai-hint={image.imageHint}
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     )}

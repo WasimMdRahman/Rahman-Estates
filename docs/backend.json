@@ -94,36 +94,6 @@
         "email",
         "name"
       ]
-    },
-    "Recommendation": {
-      "$schema": "http://json-schema.org/draft-07/schema#",
-      "title": "Recommendation",
-      "type": "object",
-      "description": "Represents an AI-powered property recommendation for a user.",
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "Unique identifier for the Recommendation entity."
-        },
-        "userId": {
-          "type": "string",
-          "description": "Reference to User. (Relationship: User 1:N Recommendation)"
-        },
-        "propertyId": {
-          "type": "string",
-          "description": "Reference to Property. (Relationship: Property 1:N Recommendation)"
-        },
-        "score": {
-          "type": "number",
-          "description": "Recommendation score indicating relevance."
-        }
-      },
-      "required": [
-        "id",
-        "userId",
-        "propertyId",
-        "score"
-      ]
     }
   },
   "auth": {
@@ -185,24 +155,8 @@
             }
           ]
         }
-      },
-      {
-        "path": "/recommendations/{recommendationId}",
-        "definition": {
-          "entityName": "Recommendation",
-          "schema": {
-            "$ref": "#/backend/entities/Recommendation"
-          },
-          "description": "Stores AI-powered property recommendations. Security is enforced through 'userId' field checks.",
-          "params": [
-            {
-              "name": "recommendationId",
-              "description": "The unique identifier for the recommendation."
-            }
-          ]
-        }
       }
     ],
-    "reasoning": "The Firestore structure is designed to ensure security, scalability, and ease of debugging, following the principles of Authorization Independence, Clarity of Intent, DBAC (Database-Based Access Control), and QAPs (Rules are not Filters). Authorization Independence is achieved through denormalization of authorization data. Path-Based Ownership and Membership Maps are used to model access consistently.\n\n*   `/users/{userId}`: Stores user profiles. This enables simple ownership-based rules for user-specific data.\n*   `/properties/{propertyId}`: Stores property listings. Anyone can read but restricted write access.\n*   `/users/{userId}/likedProperties/{propertyId}`: Stores the user's liked properties, ensuring proper ownership and data isolation.\n*   `/recommendations/{recommendationId}`: Recommendations are stored in a top-level collection without user ownership. This simplifies querying and aggregation for global insights while enforcing security through `userId` field checks.\n\nThe structure supports required QAPs:\n\n*   Property Listings: List operations are secure, as rules can filter properties based on attributes like price, location, etc., without requiring complex `get()` calls.\n*   Liked Properties: List operations are secure because each liked property is stored under the user's document, ensuring that only the user can access their liked properties."
+    "reasoning": "The Firestore structure is designed to ensure security, scalability, and ease of debugging, following the principles of Authorization Independence, Clarity of Intent, DBAC (Database-Based Access Control), and QAPs (Rules are not Filters). Authorization Independence is achieved through denormalization of authorization data. Path-Based Ownership and Membership Maps are used to model access consistently.\\n\\n*   `/users/{userId}`: Stores user profiles. This enables simple ownership-based rules for user-specific data.\\n*   `/properties/{propertyId}`: Stores property listings. Anyone can read but restricted write access.\\n*   `/users/{userId}/likedProperties/{propertyId}`: Stores the user's liked properties, ensuring proper ownership and data isolation.\\n\\nThe structure supports required QAPs:\\n\\n*   Property Listings: List operations are secure, as rules can filter properties based on attributes like price, location, etc., without requiring complex `get()` calls.\\n*   Liked Properties: List operations are secure because each liked property is stored under the user's document, ensuring that only the user can access their liked properties."
   }
 }

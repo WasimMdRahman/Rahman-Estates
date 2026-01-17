@@ -573,7 +573,7 @@ export const testimonials: Testimonial[] = [
     id: 't1',
     name: 'Sarah L.',
     location: 'New York, NY',
-    quote: 'Rahman Estates made finding our dream penthouse a reality. The AI recommendations were scarily accurate, and the entire process was seamless. Truly a first-class experience.',
+    quote: "Rahman Estates made finding our dream penthouse a reality. Their curated selection was spot on, and the entire process was seamless. Truly a first-class experience.",
     imageId: 'testimonial-1',
   },
   {

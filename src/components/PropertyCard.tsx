@@ -66,7 +66,6 @@ const PropertyCard = ({ property }: { property: Property }) => {
               src={image.imageUrl}
               alt={property.title}
               fill
-              data-ai-hint={image.imageHint}
               className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             />
           )}

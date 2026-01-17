@@ -1,2 +1,1 @@
-import { config } from 'dotenv';
-config();
+// This file is no longer used.
