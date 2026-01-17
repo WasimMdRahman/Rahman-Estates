@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 flex flex-col items-center">
           <Reveal>
-            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-b from-foreground to-foreground/70">
+            <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 text-transparent bg-clip-text bg-gradient-to-b from-foreground to-foreground/70" style={{ paddingBottom: '0.2em' }}>
               Your Legacy Awaits
             </h1>
           </Reveal>
@@ -58,7 +58,7 @@ export default function Home() {
                 <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">A Heritage of Trust</h2>
             </Reveal>
             <Reveal delay={0.1}>
-                <p className="text-2xl text-muted-foreground mb-8 leading-relaxed">
+                <p className="text-3xl text-muted-foreground mb-8 leading-relaxed">
                     For over half a century, the name Rahman has been synonymous with more than just property; it represents a heritage of trust, a commitment to unparalleled excellence, and the art of curating the world’s most exceptional living experiences. We are not merely brokers of homes; we are custodians of legacy.
                 </p>
             </Reveal>
