@@ -32,7 +32,7 @@ export default function ListingsPage() {
         (!maxPrice || property.price <= parseInt(maxPrice));
 
       return locationMatch && bedsMatch && bathsMatch && typeMatch && priceMatch;
-    }).slice(0, 12);
+    }).slice(0, 15);
   }, [query, beds, baths, type, minPrice, maxPrice]);
 
   return (

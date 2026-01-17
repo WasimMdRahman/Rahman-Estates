@@ -33,7 +33,7 @@ const FeaturedPropertiesCarousel = () => {
       className="w-full max-w-7xl mx-auto"
     >
       <CarouselContent className="-ml-8">
-        {properties.slice(0, 6).map((property, index) => {
+        {properties.slice(0, 15).map((property, index) => {
           const image = placeholderImages.find(p => p.id === property.imageIds[0]);
           const pricePerSqft = property.price / property.sqft;
 
