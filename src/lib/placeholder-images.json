@@ -77,6 +77,30 @@
       "description": "Eco-friendly home with solar panels.",
       "imageUrl": "https://images.unsplash.com/photo-1650964336589-96b3f1719a7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlY28tZnJpZW5kbHklMjBob21lfGVufDB8fHx8MTc2ODYxMjc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "eco-friendly home"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a smiling woman in her 30s.",
+      "imageUrl": "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2ODU1NDczMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a happy couple.",
+      "imageUrl": "https://images.unsplash.com/photo-1647170353301-496118fa2658?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y291cGxlJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY4NTM3MzA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "couple portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a professional man.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njg1NzI1MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "testimonial-4",
+      "description": "Portrait of a woman smiling.",
+      "imageUrl": "https://images.unsplash.com/photo-1592621385612-4d7129426394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2ODU1NDczMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
     }
   ]
 }

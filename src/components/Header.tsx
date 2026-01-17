@@ -25,7 +25,7 @@ const Header = () => {
                 <Link href="#listings" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Listings</Link>
               </li>
               <li>
-                <Link href="#recommendations" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">For You</Link>
+                <Link href="#testimonials" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">For You</Link>
               </li>
               <li>
                 <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</Link>

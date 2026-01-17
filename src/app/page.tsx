@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { placeholderImages } from "@/lib/placeholder-images.json";
 import FilterBar from "@/components/FilterBar";
-import Recommendations from "@/components/Recommendations";
+import Testimonials from "@/components/Testimonials";
 import Reveal from "@/components/animation/Reveal";
 import { ArrowRight } from "lucide-react";
 import Magnetic from "@/components/animation/Magnetic";
@@ -62,7 +62,7 @@ export default function Home() {
         <FeaturedPropertiesCarousel />
       </section>
 
-      <Recommendations />
+      <Testimonials />
     </div>
   );
 }

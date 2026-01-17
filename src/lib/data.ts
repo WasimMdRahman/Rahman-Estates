@@ -1,4 +1,4 @@
-import type { Property } from './types';
+import type { Property, Testimonial } from './types';
 
 export const properties: Property[] = [
   {
@@ -121,4 +121,35 @@ export const properties: Property[] = [
     imageIds: ['property-10-1'],
     features: ['Eco-Friendly', 'Solar Panels', 'Green Roof', 'Rainwater Harvesting'],
   },
+];
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 't1',
+    name: 'Sarah L.',
+    location: 'New York, NY',
+    quote: 'Aether Estates made finding our dream penthouse a reality. The AI recommendations were scarily accurate, and the entire process was seamless. Truly a first-class experience.',
+    imageId: 'testimonial-1',
+  },
+  {
+    id: 't2',
+    name: 'James & Emily T.',
+    location: 'Los Angeles, CA',
+    quote: "The level of detail and personalization is unmatched. We felt understood and catered to from day one. Their curated listings saved us so much time. We couldn't be happier with our new home.",
+    imageId: 'testimonial-2',
+  },
+  {
+    id: 't3',
+    name: 'Kenji Tanaka',
+    location: 'Miami, FL',
+    quote: "As an international buyer, I needed a team I could trust. Aether Estates exceeded all expectations. Professional, discreet, and incredibly knowledgeable about the luxury market.",
+    imageId: 'testimonial-3',
+  },
+  {
+    id: 't4',
+    name: 'Olivia Chen',
+    location: 'Aspen, CO',
+    quote: "From sprawling estates to exclusive penthouses, their portfolio is breathtaking. The virtual tours are so immersive. Found our perfect mountain retreat without leaving our home!",
+    imageId: 'testimonial-4',
+  }
 ];
