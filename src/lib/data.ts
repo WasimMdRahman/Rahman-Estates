@@ -4,7 +4,7 @@ export const properties: Property[] = [
   {
     id: 'p1',
     title: 'Modern Villa in the Hills',
-    description: 'A stunning modern villa offering panoramic views of the city. Features an infinity pool and state-of-the-art amenities.',
+    description: 'Nestled in the serene hills overlooking the vibrant expanse of Los Angeles, this modern architectural masterpiece offers an unparalleled living experience. The residence is a testament to sophisticated design, blending sleek lines with organic textures to create a space that is both visually stunning and profoundly calming. As you step inside, you are greeted by an expansive open-concept living area, where floor-to-ceiling glass walls frame breathtaking panoramic views of the city skyline. The seamless transition from indoor to outdoor living is exemplified by the infinity pool, which appears to merge with the horizon. Every detail has been meticulously curated, from the smart home system that offers effortless control over your environment, to the private home theater that provides a cinematic experience. This villa is not just a residence; it\'s a statement of luxury and a sanctuary above the city.',
     price: 3500000,
     location: 'Los Angeles, CA',
     beds: 5,
@@ -16,7 +16,7 @@ export const properties: Property[] = [
   {
     id: 'p2',
     title: 'Chic Downtown Penthouse',
-    description: 'An exclusive penthouse in the heart of downtown. Floor-to-ceiling windows provide breathtaking skyline views.',
+    description: 'Perched atop one of New York\'s most prestigious skyscrapers, this chic downtown penthouse represents the zenith of urban luxury. Offering an exclusive retreat from the bustling city below, this residence is a sanctuary of style and sophistication. Upon entering via a private, key-coded elevator, you are immediately enveloped by an atmosphere of refined elegance. The sprawling living space is defined by its dramatic floor-to-ceiling windows, which offer 360-degree, jaw-dropping views of the iconic Manhattan skyline. Step out onto the expansive rooftop terrace, a rare urban oasis perfect for al fresco dining or simply watching the city lights twinkle to life. With 24/7 concierge service anticipating your every need, this penthouse is more than a home—it is a lifestyle statement for the discerning individual who demands nothing but the best in the heart of the city that never sleeps.',
     price: 5200000,
     location: 'New York, NY',
     beds: 3,
@@ -28,7 +28,7 @@ export const properties: Property[] = [
   {
     id: 'p3',
     title: 'Secluded Countryside Mansion',
-    description: 'A grand mansion set on 50 acres of pristine countryside. A perfect escape with ultimate privacy and luxury.',
+    description: 'Escape to a world of unparalleled privacy and natural beauty at this magnificent countryside mansion, majestically situated on 50 sprawling acres of pristine Aspen landscape. This grand estate is a true sanctuary, offering a level of seclusion and luxury that is simply unmatched. The main residence is a masterpiece of rustic elegance, featuring soaring ceilings, hand-hewn timber beams, and massive stone fireplaces. The property is a paradise for the outdoor enthusiast, boasting its own private, crystal-clear lake for swimming and fishing, as well as world-class equestrian facilities with stables and riding trails. For the wine connoisseur, a private vineyard offers the potential to create your own signature vintages. A separate, fully-equipped guest house provides luxurious accommodations for visitors, ensuring their comfort and privacy. This is more than a home; it is a legacy property, a private kingdom where you can create lasting memories.',
     price: 8900000,
     location: 'Aspen, CO',
     beds: 8,
@@ -40,7 +40,7 @@ export const properties: Property[] = [
   {
     id: 'p4',
     title: 'Oceanfront Paradise',
-    description: 'Wake up to the sound of waves in this beautiful beachfront property. Direct access to a private beach.',
+    description: 'Experience the ultimate coastal lifestyle in this exquisite oceanfront paradise, where the turquoise waters of Miami are your backyard. This stunning property offers a rare opportunity to live directly on the sand, with private, gated access to a pristine stretch of beach. From the moment you enter, you are captivated by the panoramic ocean views that fill every room through walls of glass. The interior design is a seamless blend of contemporary comfort and beach-chic, with an open floor plan that encourages a relaxed flow. Wake up to the gentle sound of waves lapping the shore in your serene master suite, which features a private balcony perfect for morning coffee. The expansive outdoor living area is an entertainer\'s dream, complete with a sparkling pool and a fully equipped outdoor kitchen. For the boating enthusiast, a private yacht dock provides immediate access to the open water. This is a sensory experience, a place where every day feels like a vacation.',
     price: 6750000,
     location: 'Miami, FL',
     beds: 4,
@@ -52,7 +52,7 @@ export const properties: Property[] = [
   {
     id: 'p5',
     title: 'Industrial Modern Loft',
-    description: 'A unique loft in a converted factory, featuring exposed brick, high ceilings, and a massive open-plan living space.',
+    description: 'Discover a truly unique living experience in this spectacular industrial modern loft, located within a meticulously restored factory in the heart of Chicago\'s most vibrant neighborhood. This residence is a celebration of history and contemporary design, offering a dramatic and inspiring space. The moment you step inside, you are struck by the sheer volume of the massive open-plan living area, defined by soaring 20-foot ceilings, original exposed brick walls, and massive timber beams that speak to the building\'s industrial heritage. Sunlight pours through enormous factory windows, illuminating the polished concrete floors. The space is perfect for both large-scale entertaining and quiet contemplation. A dedicated artist studio with ample natural light provides the ideal environment for creative pursuits. This is a rare opportunity to own a piece of Chicago history, reimagined for the ultimate in modern urban living.',
     price: 2100000,
     location: 'Chicago, IL',
     beds: 2,
@@ -64,7 +64,7 @@ export const properties: Property[] = [
   {
     id: 'p6',
     title: 'Rustic Mountain Retreat',
-    description: 'A cozy yet luxurious cabin perfect for ski lovers and nature enthusiasts. Features a large stone fireplace and mountain views.',
+    description: 'Nestled in the heart of Jackson Hole, this rustic mountain retreat offers the perfect blend of cozy cabin charm and sophisticated luxury. The great room is the heart of the home, featuring vaulted ceilings with exposed wood beams and a magnificent floor-to-ceiling stone fireplace that radiates warmth and ambiance. Expansive windows frame breathtaking, uninterrupted views of the majestic Teton mountain range. For the ultimate convenience, this property offers coveted ski-in/ski-out access, allowing you to hit the slopes directly from your doorstep. After a day of adventure, unwind in the private outdoor hot tub under a canopy of stars, or gather with loved ones on the spacious deck to watch the sunset paint the peaks in hues of pink and gold. This is more than a vacation home; it is a year-round sanctuary where you can reconnect with nature and create unforgettable memories in one of the world\'s most beautiful destinations.',
     price: 1850000,
     location: 'Jackson Hole, WY',
     beds: 4,
@@ -76,7 +76,7 @@ export const properties: Property[] = [
    {
     id: 'p7',
     title: 'Luxury High-Rise Apartment',
-    description: 'Sophisticated living in a modern high-rise, complete with a residents-only lounge and fitness center.',
+    description: 'Elevate your lifestyle in this sophisticated high-rise apartment, offering a premier address in the vibrant heart of San Francisco. This residence combines breathtaking city views with an array of exclusive, five-star amenities designed for modern urban living. The open-concept living space is bathed in natural light, with floor-to-ceiling windows that showcase panoramic vistas of the city and the bay. The sleek, modern kitchen is equipped with high-end integrated appliances and designer finishes. As a resident, you will enjoy exclusive access to a state-of-the-art fitness center, a beautifully appointed resident lounge perfect for socializing or working from home, and the convenience of 24-hour valet parking and concierge service. This is turnkey luxury living at its finest, providing a secure and comfortable sanctuary with the best of San Francisco\'s dining, shopping, and cultural attractions just moments away.',
     price: 2750000,
     location: 'San Francisco, CA',
     beds: 2,
@@ -88,7 +88,7 @@ export const properties: Property[] = [
   {
     id: 'p8',
     title: 'Elegant Suburban Family Home',
-    description: 'A beautiful family home in a quiet, upscale suburb, featuring a large backyard and a designer kitchen.',
+    description: 'Settle into a life of comfort and style in this elegant family home, perfectly situated in a quiet, upscale Austin suburb known for its friendly community and top-rated school district. The heart of the home is the stunning gourmet kitchen, which has been thoughtfully designed for both functionality and beauty, featuring high-end appliances and a large center island that serves as a natural gathering spot. The expansive, professionally landscaped backyard provides a private and secure oasis for children to play, and a large patio is perfect for outdoor dining and entertaining. As a resident, you\'ll also enjoy access to a fantastic community pool and park. This home offers the perfect balance of suburban tranquility and convenient access to all that Austin has to offer, making it an exceptional choice for discerning families seeking a blend of luxury and community.',
     price: 1500000,
     location: 'Austin, TX',
     beds: 5,
@@ -100,7 +100,7 @@ export const properties: Property[] = [
   {
     id: 'p9',
     title: 'Historic Townhouse Gem',
-    description: 'A meticulously restored historic townhouse that blends timeless elegance with modern comforts.',
+    description: 'Own a piece of Boston\'s rich history with this meticulously restored historic townhouse, a true gem that seamlessly blends timeless elegance with the finest modern comforts. Located on a picturesque, tree-lined street, this residence offers a unique and sophisticated urban living experience. The classic brick facade and period details have been lovingly preserved, while the interior has been completely renovated. High ceilings, intricate crown molding, and original hardwood floors coexist beautifully with a state-of-the-art kitchen and luxurious, spa-like bathrooms. A particular highlight is the private walled garden, a serene and verdant oasis in the midst of the city. Ascend to the rooftop deck to enjoy stunning views of the city skyline. This is a rare opportunity to live in a home that is not only beautiful and functional but also rich with character and history, a perfect sanctuary for those who appreciate architectural integrity.',
     price: 3200000,
     location: 'Boston, MA',
     beds: 4,
@@ -112,7 +112,7 @@ export const properties: Property[] = [
    {
     id: 'p10',
     title: 'Sustainable Eco-Haven',
-    description: 'An architectural masterpiece of sustainable design, powered by solar and built with reclaimed materials.',
+    description: 'Embrace a forward-thinking lifestyle in this sustainable eco-haven, an architectural masterpiece that proves luxury and environmental responsibility can go hand in hand. Located in Portland, this home is a testament to innovative green design, powered entirely by a high-efficiency solar panel system. The construction thoughtfully incorporates reclaimed and sustainable materials, from salvaged timber beams to recycled glass countertops. A living green roof provides excellent insulation and creates a natural habitat, while an advanced rainwater harvesting system minimizes water consumption. The interior is designed for health and wellness, with non-toxic finishes and a fresh air circulation system. This is more than just a house; it is a statement of values, offering a chance to live a beautiful, comfortable life in harmony with the environment, without compromising on style or modern amenities.',
     price: 4100000,
     location: 'Portland, OR',
     beds: 3,
