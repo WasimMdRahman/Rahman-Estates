@@ -22,7 +22,7 @@ const Reveal = ({ children, delay = 0 }: RevealProps) => {
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay }}
-        style={{ paddingTop: '0.1em', paddingBottom: '0.1em' }}
+        style={{ paddingTop: '0.2em', paddingBottom: '0.2em' }}
       >
         {children}
       </motion.div>
