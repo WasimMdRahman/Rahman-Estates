@@ -1,5 +1,7 @@
 'use client';
 
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
@@ -8,6 +10,30 @@ import { Search } from "lucide-react";
 import Magnetic from "./animation/Magnetic";
 
 const FilterBar = () => {
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState('');
+  const [beds, setBeds] = useState('');
+  const [baths, setBaths] = useState('');
+  const [propertyType, setPropertyType] = useState('');
+  const [priceRange, setPriceRange] = useState('');
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const params = new URLSearchParams();
+    if (searchQuery) params.set('q', searchQuery);
+    if (beds) params.set('beds', beds.replace('+', ''));
+    if (baths) params.set('baths', baths.replace('+', ''));
+    if (propertyType) params.set('type', propertyType);
+    if (priceRange) {
+        const [min, max] = priceRange.split('-');
+        if (min) params.set('minPrice', min);
+        if (max && max !== "100000000") params.set('maxPrice', max);
+    }
+    
+    router.push(`/listings?${params.toString()}`);
+  };
+
   return (
     <motion.div
       initial={{ y: 50, opacity: 0 }}
@@ -15,15 +41,20 @@ const FilterBar = () => {
       transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
       className="relative z-20 -mt-16 mb-20"
     >
-      <div className="p-6 bg-background/50 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl shadow-black/30">
+      <form 
+        onSubmit={handleSearch}
+        className="p-6 bg-background/50 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl shadow-black/30"
+      >
         <div className="flex gap-4 items-center">
           <Input
             type="text"
             placeholder="Search by location, address, agent..."
             className="h-14 text-base bg-background/50 border-white/10 focus-visible:ring-primary flex-grow"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
           <Magnetic>
-            <Button size="lg" className="h-14 text-lg font-bold rounded-md flex items-center gap-2 px-8">
+            <Button type="submit" size="lg" className="h-14 text-lg font-bold rounded-md flex items-center gap-2 px-8">
               <Search className="w-5 h-5" />
               <span>Search</span>
             </Button>
@@ -31,7 +62,7 @@ const FilterBar = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
           <div>
-            <Select>
+            <Select onValueChange={setBeds} value={beds}>
               <SelectTrigger className="h-14 text-base bg-background/50 border-white/10">
                 <SelectValue placeholder="Beds" />
               </SelectTrigger>
@@ -46,7 +77,7 @@ const FilterBar = () => {
             </Select>
           </div>
           <div>
-            <Select>
+            <Select onValueChange={setBaths} value={baths}>
               <SelectTrigger className="h-14 text-base bg-background/50 border-white/10">
                 <SelectValue placeholder="Baths" />
               </SelectTrigger>
@@ -60,7 +91,7 @@ const FilterBar = () => {
             </Select>
           </div>
           <div>
-            <Select>
+            <Select onValueChange={setPropertyType} value={propertyType}>
               <SelectTrigger className="h-14 text-base bg-background/50 border-white/10">
                 <SelectValue placeholder="Property Type" />
               </SelectTrigger>
@@ -78,7 +109,7 @@ const FilterBar = () => {
             </Select>
           </div>
           <div>
-            <Select>
+            <Select onValueChange={setPriceRange} value={priceRange}>
               <SelectTrigger className="h-14 text-base bg-background/50 border-white/10">
                 <SelectValue placeholder="Price Range" />
               </SelectTrigger>
@@ -92,7 +123,7 @@ const FilterBar = () => {
             </Select>
           </div>
         </div>
-      </div>
+      </form>
     </motion.div>
   );
 };
