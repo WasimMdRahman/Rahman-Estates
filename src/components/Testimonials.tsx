@@ -1,5 +1,6 @@
 'use client';
 
+import * as React from 'react';
 import Image from "next/image";
 import { testimonials } from "@/lib/data";
 import { placeholderImages } from "@/lib/placeholder-images.json";
@@ -7,8 +8,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Card, CardContent } from "@/components/ui/card";
 import Reveal from "./animation/Reveal";
 import { Star } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
 
 const Testimonials = () => {
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
+
   return (
     <section className="py-20" id="testimonials">
       <div className="text-center mb-12">
@@ -21,11 +27,14 @@ const Testimonials = () => {
       </div>
 
       <Carousel
+        plugins={[plugin.current]}
         opts={{
           align: "start",
           loop: true,
         }}
         className="w-full max-w-5xl mx-auto"
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
       >
         <CarouselContent className="items-stretch">
           {testimonials.map((testimonial) => {
