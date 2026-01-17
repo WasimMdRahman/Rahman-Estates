@@ -33,6 +33,9 @@ const Header = () => {
               <li>
                 <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">About</Link>
               </li>
+              <li>
+                <Link href="/#contact" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+              </li>
             </ul>
           </nav>
         </div>
