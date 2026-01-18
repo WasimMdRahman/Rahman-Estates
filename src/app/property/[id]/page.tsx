@@ -1,14 +1,17 @@
+'use client';
+
 import { properties } from "@/lib/data";
 import { placeholderImages } from "@/lib/placeholder-images.json";
 import type { Property } from "@/lib/types";
-import { notFound } from "next/navigation";
+import { notFound, useRouter } from "next/navigation";
 import Image from "next/image";
-import { Bath, Bed, Building, CheckCircle, MapPin, Maximize } from "lucide-react";
+import { ArrowLeft, Bath, Bed, Building, CheckCircle, MapPin, Maximize } from "lucide-react";
 import Reveal from "@/components/animation/Reveal";
 import Magnetic from "@/components/animation/Magnetic";
 import { Button } from "@/components/ui/button";
 
 export default function PropertyDetailPage({ params }: { params: { id: string } }) {
+  const router = useRouter();
   const property: Property | undefined = properties.find(p => p.id === params.id);
 
   if (!property) {
@@ -21,6 +24,19 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-6xl mx-auto">
+        <div className="mb-8">
+            <Magnetic>
+                <Button
+                    variant="ghost"
+                    size="icon"
+                    onClick={() => router.back()}
+                    className="rounded-full h-12 w-12 border border-white/10 bg-white/5 backdrop-blur-sm hover:bg-white/10"
+                    aria-label="Go back"
+                >
+                    <ArrowLeft className="h-6 w-6" />
+                </Button>
+            </Magnetic>
+        </div>
         <Reveal>
           <h1 className="font-headline text-4xl md:text-6xl font-bold mb-2">{property.title}</h1>
         </Reveal>
