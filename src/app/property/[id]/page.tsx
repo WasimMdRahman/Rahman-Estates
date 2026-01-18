@@ -16,6 +16,7 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
   }
 
   const mainImage = placeholderImages.find(p => p.id === property.imageIds[0]);
+  const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(property.location)}`;
 
   return (
     <div className="container mx-auto px-4 py-16">
@@ -91,7 +92,14 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
                 </div>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-white/10">
+              <div className="mt-8 pt-6 border-t border-white/10 space-y-4">
+                <Magnetic>
+                    <a href={mapUrl} target="_blank" rel="noopener noreferrer" className="block w-full">
+                        <Button variant="outline" size="lg" className="w-full text-lg h-14 rounded-full font-bold">
+                            Show on Map
+                        </Button>
+                    </a>
+                </Magnetic>
                 <Magnetic>
                   <Button size="lg" className="w-full text-lg h-14 rounded-full font-bold">
                     Schedule a Viewing
