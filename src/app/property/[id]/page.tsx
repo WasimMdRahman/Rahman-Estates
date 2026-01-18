@@ -7,6 +7,7 @@ import { Bath, Bed, Building, CheckCircle, MapPin, Maximize } from "lucide-react
 import Reveal from "@/components/animation/Reveal";
 import Magnetic from "@/components/animation/Magnetic";
 import { Button } from "@/components/ui/button";
+import GoogleMap from "@/components/GoogleMap";
 
 export default function PropertyDetailPage({ params }: { params: { id: string } }) {
   const property: Property | undefined = properties.find(p => p.id === params.id);
@@ -43,14 +44,14 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 space-y-12">
             <Reveal>
               <h2 className="font-headline text-3xl font-bold mb-4">Property Details</h2>
               <p className="text-muted-foreground leading-relaxed">{property.description}</p>
             </Reveal>
 
             <Reveal delay={0.2}>
-              <div className="mt-8 pt-8 border-t border-white/10">
+              <div>
                 <h3 className="font-headline text-2xl font-bold mb-6">Key Features</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {property.features.map((feature, index) => (
@@ -61,6 +62,15 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
                   ))}
                 </div>
               </div>
+            </Reveal>
+
+            <Reveal delay={0.3}>
+                <div>
+                    <h3 className="font-headline text-2xl font-bold mb-6">Location</h3>
+                    <div className="aspect-[16/9] w-full rounded-2xl overflow-hidden border border-white/10">
+                        <GoogleMap lat={property.lat} lng={property.lng} title={property.title} />
+                    </div>
+                </div>
             </Reveal>
           </div>
 

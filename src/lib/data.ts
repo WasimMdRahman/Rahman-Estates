@@ -13,6 +13,8 @@ export const properties: Property[] = [
     sqft: 6200,
     imageIds: ['property-1-1', 'property-1-2'],
     features: ['Infinity Pool', 'Home Theater', 'Smart Home System', 'City Views'],
+    lat: 34.0928,
+    lng: -118.362,
   },
   {
     id: 'p2',
@@ -25,6 +27,8 @@ export const properties: Property[] = [
     sqft: 4100,
     imageIds: ['property-2-1', 'property-2-2'],
     features: ['Rooftop Terrace', '24/7 Concierge', 'Private Elevator', 'Skyline Views'],
+    lat: 40.71427,
+    lng: -74.00597,
   },
   {
     id: 'p3',
@@ -37,6 +41,8 @@ export const properties: Property[] = [
     sqft: 9000,
     imageIds: ['property-3-1'],
     features: ['Private Lake', 'Wood-Paneled Library', 'Acreage', 'Guest House'],
+    lat: 42.1495,
+    lng: -74.4557,
   },
   {
     id: 'p4',
@@ -49,6 +55,8 @@ export const properties: Property[] = [
     sqft: 5500,
     imageIds: ['property-4-1'],
     features: ['Private Beach Access', 'Ocean Views', 'Outdoor Kitchen', 'Yacht Dock'],
+    lat: 25.79065,
+    lng: -80.13005,
   },
   {
     id: 'p5',
@@ -61,6 +69,8 @@ export const properties: Property[] = [
     sqft: 3200,
     imageIds: ['property-5-1'],
     features: ['High Ceilings', 'Exposed Brick', 'Open Concept', 'Artist Studio'],
+    lat: 41.88183,
+    lng: -87.62318,
   },
   {
     id: 'p6',
@@ -73,6 +83,8 @@ export const properties: Property[] = [
     sqft: 3800,
     imageIds: ['property-6-1'],
     features: ['Mountain Views', 'Stone Fireplace', 'Ski-In/Ski-Out Access', 'Hot Tub'],
+    lat: 39.1911,
+    lng: -106.8175,
   },
   {
     id: 'p7',
@@ -85,6 +97,8 @@ export const properties: Property[] = [
     sqft: 2100,
     imageIds: ['property-7-1'],
     features: ['City Views', 'Valet Parking', 'Fitness Center', 'Resident Lounge'],
+    lat: 37.77493,
+    lng: -122.41942,
   },
   {
     id: 'p8',
@@ -97,6 +111,8 @@ export const properties: Property[] = [
     sqft: 3400,
     imageIds: ['property-8-1'],
     features: ['Landscaped Garden', 'Family Friendly', 'Top School District', 'Two-Car Garage'],
+    lat: 41.12202,
+    lng: -73.79485,
   },
   {
     id: 'p9',
@@ -109,6 +125,8 @@ export const properties: Property[] = [
     sqft: 5200,
     imageIds: ['property-9-1'],
     features: ['Historic Details', 'Private Garden', 'Gourmet Kitchen', 'Prime Location'],
+    lat: 42.35843,
+    lng: -71.06369,
   },
   {
     id: 'p10',
@@ -121,6 +139,8 @@ export const properties: Property[] = [
     sqft: 3100,
     imageIds: ['property-10-1'],
     features: ['Solar Panels', 'Rainwater Harvesting', 'Organic Garden', 'Energy Efficient'],
+    lat: 37.9749,
+    lng: -122.5311,
   },
   {
     id: 'p11',
@@ -133,6 +153,8 @@ export const properties: Property[] = [
     sqft: 3500,
     imageIds: ['property-11-1'],
     features: ['Original Details', 'Chef\'s Kitchen', 'Cast-Iron Building', 'Open Layout'],
+    lat: 40.7233,
+    lng: -74.0030,
   },
   {
     id: 'p12',
@@ -145,6 +167,8 @@ export const properties: Property[] = [
     sqft: 7200,
     imageIds: ['property-12-1'],
     features: ['Private Garden', 'Gourmet Kitchen', 'Elevator', 'Prime Location'],
+    lat: 40.7745,
+    lng: -73.9665,
   },
   {
     id: 'p13',
@@ -157,6 +181,8 @@ export const properties: Property[] = [
     sqft: 5800,
     imageIds: ['property-13-1'],
     features: ['Infinity Pool', 'Screening Room', 'Wine Cellar', 'Panoramic Views'],
+    lat: 34.1016,
+    lng: -118.3323,
   },
   {
     id: 'p14',
@@ -169,6 +195,8 @@ export const properties: Property[] = [
     sqft: 11000,
     imageIds: ['property-14-1'],
     features: ['Gated Estate', 'Motor Court', 'Swimming Pool', 'Lush Gardens'],
+    lat: 34.0736,
+    lng: -118.4004,
   },
   {
     id: 'p15',
@@ -181,6 +209,8 @@ export const properties: Property[] = [
     sqft: 6500,
     imageIds: ['property-15-1'],
     features: ['Historic Details', 'Bay Views', 'Landscaped Garden', 'Roof Deck'],
+    lat: 37.7923,
+    lng: -122.4356,
   },
   {
     id: 'p16',
@@ -193,6 +223,8 @@ export const properties: Property[] = [
     sqft: 1800,
     imageIds: ['property-16-1'],
     features: ['Two Levels', 'Private Deck', 'Double-Height Ceilings', 'Concrete Floors'],
+    lat: 37.7786,
+    lng: -122.4056,
   },
   {
     id: 'p17',
@@ -205,6 +237,8 @@ export const properties: Property[] = [
     sqft: 10000,
     imageIds: ['property-17-1'],
     features: ['Greystone Architecture', 'Home Theater', 'Landscaped Yard', 'Attached Garage'],
+    lat: 41.9213,
+    lng: -87.6496,
   },
   {
     id: 'p18',
@@ -217,6 +251,8 @@ export const properties: Property[] = [
     sqft: 5200,
     imageIds: ['property-18-1'],
     features: ['Lake Views', 'Full-Floor Residence', '24-Hour Doorman', 'Indoor Pool'],
+    lat: 41.8902,
+    lng: -87.6278,
   },
   {
     id: 'p19',
@@ -229,6 +265,8 @@ export const properties: Property[] = [
     sqft: 7500,
     imageIds: ['property-19-1'],
     features: ['Waterfront', 'Private Dock', 'Infinity Pool', 'Bay Views'],
+    lat: 25.7925,
+    lng: -80.1601,
   },
   {
     id: 'p20',
@@ -241,6 +279,8 @@ export const properties: Property[] = [
     sqft: 4100,
     imageIds: ['property-20-1'],
     features: ['Oceanfront', 'Private Elevator', 'Multiple Terraces', '5-Star Amenities'],
+    lat: 25.7681,
+    lng: -80.1345,
   },
   {
     id: 'p21',
@@ -253,6 +293,8 @@ export const properties: Property[] = [
     sqft: 4800,
     imageIds: ['property-21-1'],
     features: ['Historic Federal Style', 'Private Garden', 'Chef\'s Kitchen', 'Cobblestone Street'],
+    lat: 38.905,
+    lng: -77.065,
   },
   {
     id: 'p22',
@@ -265,6 +307,8 @@ export const properties: Property[] = [
     sqft: 2600,
     imageIds: ['property-22-1'],
     features: ['Private Roof Deck', 'Two Levels', 'City Views', 'Designer Finishes'],
+    lat: 38.909,
+    lng: -77.03,
   },
   {
     id: 'p23',
@@ -277,6 +321,8 @@ export const properties: Property[] = [
     sqft: 8000,
     imageIds: ['property-23-1'],
     features: ['Oceanfront Bluff', 'Infinity Pool', 'Private Beach Access', 'White-Water Views'],
+    lat: 32.84,
+    lng: -117.27,
   },
   {
     id: 'p24',
@@ -289,6 +335,8 @@ export const properties: Property[] = [
     sqft: 3200,
     imageIds: ['property-24-1'],
     features: ['Steps to Beach', 'Ocean Breezes', 'Front Porch', 'Backyard with Fire Pit'],
+    lat: 32.68,
+    lng: -117.18,
   },
   {
     id: 'p25',
@@ -301,6 +349,8 @@ export const properties: Property[] = [
     sqft: 4500,
     imageIds: ['property-25-1'],
     features: ['Direct Beach Access', 'Ocean Views', 'Expansive Decks', 'Gourmet Kitchen'],
+    lat: 34.0259,
+    lng: -118.7798,
   },
   {
     id: 'p26',
@@ -313,6 +363,8 @@ export const properties: Property[] = [
     sqft: 6800,
     imageIds: ['property-26-1'],
     features: ['Duplex Penthouse', 'Private Roof Terrace', 'Wood-Burning Fireplace', 'Landmarked Building'],
+    lat: 40.7162,
+    lng: -74.0086,
   },
   {
     id: 'p27',
@@ -325,6 +377,8 @@ export const properties: Property[] = [
     sqft: 5600,
     imageIds: ['property-27-1'],
     features: ['Exclusive Island', 'Ocean & City Views', 'Private Beach', 'Golf Course'],
+    lat: 25.7617,
+    lng: -80.1412,
   },
   {
     id: 'p28',
@@ -337,6 +391,8 @@ export const properties: Property[] = [
     sqft: 9500,
     imageIds: ['property-28-1'],
     features: ['Historic Gold Coast', 'Restored Mansion', 'Private Garden', 'Chef\'s Kitchen'],
+    lat: 41.905,
+    lng: -87.63,
   },
   {
     id: 'p29',
@@ -349,6 +405,8 @@ export const properties: Property[] = [
     sqft: 3800,
     imageIds: ['property-29-1'],
     features: ['Premier Coop Building', 'Park Views', '24-Hour Doorman', 'Classic Architecture'],
+    lat: 37.7914,
+    lng: -122.414,
   },
   {
     id: 'p30',
@@ -361,6 +419,8 @@ export const properties: Property[] = [
     sqft: 12000,
     imageIds: ['property-30-1'],
     features: ['Limestone Facade', 'Grand-Scale Rooms', 'Commercial-Grade Kitchen', 'Private Garden'],
+    lat: 38.916,
+    lng: -77.05,
   },
   {
     id: 'p31',
@@ -373,6 +433,8 @@ export const properties: Property[] = [
     sqft: 6000,
     imageIds: ['property-31-1'],
     features: ['Bay & City Views', 'Infinity Pool', 'Indoor-Outdoor Flow', 'Gourmet Kitchen'],
+    lat: 32.701,
+    lng: -117.24,
   },
   {
     id: 'p32',
@@ -385,6 +447,8 @@ export const properties: Property[] = [
     sqft: 3500,
     imageIds: ['property-32-1'],
     features: ['Steps to Beach', 'Ocean Views', 'Remodeled', 'Private Backyard'],
+    lat: 32.95,
+    lng: -117.27,
   },
   {
     id: 'p33',
@@ -397,6 +461,8 @@ export const properties: Property[] = [
     sqft: 4200,
     imageIds: ['property-33-1'],
     features: ['Historic Details', 'Private Garden', 'Chef\'s Kitchen', 'Prime Location'],
+    lat: 40.735,
+    lng: -74.005,
   },
   {
     id: 'p34',
@@ -409,6 +475,8 @@ export const properties: Property[] = [
     sqft: 3800,
     imageIds: ['property-34-1'],
     features: ['Central Park Views', '24-Hour Doorman', 'Fitness Center', 'Luxury Amenities'],
+    lat: 40.767,
+    lng: -73.974,
   },
   {
     id: 'p35',
@@ -421,6 +489,8 @@ export const properties: Property[] = [
     sqft: 5000,
     imageIds: ['property-35-1'],
     features: ['Historic Brownstone', 'Original Details', 'Private Garden', 'Deck'],
+    lat: 40.696,
+    lng: -73.994,
   },
   {
     id: 'p36',
@@ -433,6 +503,8 @@ export const properties: Property[] = [
     sqft: 12000,
     imageIds: ['property-36-1'],
     features: ['Gated Estate', 'Pool & Spa', 'Guesthouse', 'Tennis Court'],
+    lat: 34.061,
+    lng: -118.47,
   },
   {
     id: 'p37',
@@ -445,6 +517,8 @@ export const properties: Property[] = [
     sqft: 4000,
     imageIds: ['property-37-1'],
     features: ['Steps to Beach', 'Rooftop Deck', 'Ocean Views', 'Gourmet Kitchen'],
+    lat: 34.01,
+    lng: -118.5,
   },
   {
     id: 'p38',
@@ -457,6 +531,8 @@ export const properties: Property[] = [
     sqft: 5200,
     imageIds: ['property-38-1'],
     features: ['Family Friendly', 'Swimming Pool', 'Gourmet Kitchen', 'Island Lifestyle'],
+    lat: 25.7,
+    lng: -80.16,
   },
   {
     id: 'p39',
@@ -469,6 +545,8 @@ export const properties: Property[] = [
     sqft: 8500,
     imageIds: ['property-39-1'],
     features: ['Mediterranean Architecture', 'Courtyard Pool', 'Gourmet Kitchen', 'Historic Charm'],
+    lat: 25.72,
+    lng: -80.27,
   },
   {
     id: 'p40',
@@ -481,6 +559,8 @@ export const properties: Property[] = [
     sqft: 4500,
     imageIds: ['property-40-1'],
     features: ['New Construction', 'Roof Deck', 'Gourmet Kitchen', 'Prime Location'],
+    lat: 41.908,
+    lng: -87.67,
   },
   {
     id: 'p41',
@@ -493,6 +573,8 @@ export const properties: Property[] = [
     sqft: 6000,
     imageIds: ['property-41-1'],
     features: ['Lake & City Views', 'Full-Floor Residence', '24-Hour Doorman', 'Luxury Amenities'],
+    lat: 41.901,
+    lng: -87.625,
   },
   {
     id: 'p42',
@@ -505,6 +587,8 @@ export const properties: Property[] = [
     sqft: 2500,
     imageIds: ['property-42-1'],
     features: ['Panoramic Views', '24-Hour Doorman', 'Formal Dining Room', 'Prime Location'],
+    lat: 37.802,
+    lng: -122.42,
   },
   {
     id: 'p43',
@@ -517,6 +601,8 @@ export const properties: Property[] = [
     sqft: 7500,
     imageIds: ['property-43-1'],
     features: ['Golden Gate Views', 'Gourmet Kitchen', 'Private Garden', 'Elevator'],
+    lat: 37.788,
+    lng: -122.48,
   },
   {
     id: 'p44',
@@ -529,6 +615,8 @@ export const properties: Property[] = [
     sqft: 5500,
     imageIds: ['property-44-1'],
     features: ['Historic Victorian', 'Separate Apartment', 'Private Garden', 'Prime Location'],
+    lat: 38.909,
+    lng: -77.043,
   },
   {
     id: 'p45',
@@ -541,6 +629,8 @@ export const properties: Property[] = [
     sqft: 2800,
     imageIds: ['property-45-1'],
     features: ['Historic Rowhouse', 'Updated Kitchen', 'Finished Basement', 'Rear Patio'],
+    lat: 38.887,
+    lng: -77.0,
   },
   {
     id: 'p46',
@@ -553,6 +643,8 @@ export const properties: Property[] = [
     sqft: 14000,
     imageIds: ['property-46-1'],
     features: ['Gated Estate', 'Guesthouse', 'Tennis Court', 'Equestrian Potential'],
+    lat: 33.02,
+    lng: -117.2,
   },
   {
     id: 'p47',
@@ -565,6 +657,8 @@ export const properties: Property[] = [
     sqft: 1500,
     imageIds: ['property-47-1'],
     features: ['Historic Building', 'Exposed Brick', 'Rooftop Deck', 'Prime Location'],
+    lat: 32.71,
+    lng: -117.16,
   }
 ];
 

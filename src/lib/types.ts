@@ -9,6 +9,8 @@ export interface Property {
   sqft: number;
   imageIds: string[];
   features: string[];
+  lat: number;
+  lng: number;
 }
 
 export interface Testimonial {
