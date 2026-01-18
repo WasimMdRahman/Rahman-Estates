@@ -7,7 +7,6 @@ import { Bath, Bed, Building, CheckCircle, MapPin, Maximize } from "lucide-react
 import Reveal from "@/components/animation/Reveal";
 import Magnetic from "@/components/animation/Magnetic";
 import { Button } from "@/components/ui/button";
-import GoogleMap from "@/components/GoogleMap";
 
 export default function PropertyDetailPage({ params }: { params: { id: string } }) {
   const property: Property | undefined = properties.find(p => p.id === params.id);
@@ -62,15 +61,6 @@ export default function PropertyDetailPage({ params }: { params: { id: string } 
                   ))}
                 </div>
               </div>
-            </Reveal>
-
-            <Reveal delay={0.3}>
-                <div>
-                    <h3 className="font-headline text-2xl font-bold mb-6">Location</h3>
-                    <div className="aspect-[16/9] w-full rounded-2xl overflow-hidden border border-white/10">
-                        <GoogleMap lat={property.lat} lng={property.lng} title={property.title} />
-                    </div>
-                </div>
             </Reveal>
           </div>
 
